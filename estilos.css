@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway" , sans-serif;
+}
+
+header {
+    background-color: #F6EDEA;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+    background: url('./imagenes/Logo_bari.svg');
+    width: 25.71px;
+    height: 40px;
+    text-indent: -1000px;
+    overflow: hidden;
+}
+
+#logo a {
+    display: block;
+    height: 40px;
+}
+
+#home {
+    background: linear-gradient(180deg, rgba(89,89,89,0.13596491228070173) 0%, rgba(0,0,0,0.8) 100%) , url('./imagenes/banner_ppal.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    padding: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#home h2 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+#beneficios {
+    text-align: center;
+    padding: 2em;
+    margin-top: 1em;
+}
+
+#beneficios h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+#beneficios div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+#beneficios figure {
+    background-color: #f7f4f394;
+    border: 2px solid #e9decf65;
+    padding: 1em;
+    border-radius: 10px;
+    flex-basis: 100%;
+    height: auto;
+    width: 100%;
+}
+
+
+#beneficios img {
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+#beneficios h3 {
+    margin: 1em 0;
+    font-size: 1.5rem;
+}
+
+#quienes-somos {
+    text-align: center;
+    padding: 2em;
+}
+
+#quienes-somos h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+#quienes-somos div {
+    width: 100%;
+    align-items: center;
+    gap: 1em;
+}
+
+
+#quienes-somos figure {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center; 
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: justify;
+    margin-bottom: 20px;
+    flex-basis: 100%;
+    gap: 16px;
+}
+
+
+#quienes-somos img {
+    border-radius: 25px;
+    margin-right: 40px; 
+    flex-basis: 100%;
+    height: auto;
+    width: 100%;
+
+}
+
+#quienes-somos figcaption {
+    margin-top: 20px;
+    font-size: 1.2em;
+    line-height: normal;
+    text-align: left;
+    max-width: 800px;
+    margin-left: 20px; 
+    flex-basis: auto;
+}
+
+
+#testimonios {
+    padding: 2em;
+}
+
+#testimonios h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#testimonios div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+#testimonios figure {
+    background-color: #f7f4f394;
+    border: 2px solid #e9decf65;
+    padding: 1em;
+    border-radius: 10px;
+    flex-basis: 100%;
+    height: auto;
+    width: 100%;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+
+#testimonios h3 {
+    padding: 8px 0 8px 0;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 2em;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+footer ul {
+    display: flex;
+    gap: 10px;
+}
+
+
+footer li {
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+
+
+footer a {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+@media (max-width: 460px) {
+    #quienes-somos div {
+        flex-direction: column; 
+    }
+
+    #quienes-somos figcaption {
+        margin: 20px 0; 
+        padding: 0 20px; 
+        font-size: 1em;
+    }
+
+    #testimonios figure {
+        padding: 1em;
+        flex-basis: 100%;
+        height: auto;
+        width: 100%;
+        margin-bottom: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 21px;
+}
+
+}
+
+
+
+@media screen and (min-width: 460px) {
+    
+    #home h2 {
+        font-size: 2.5rem;
+    }
+    
+    #beneficios div {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    #beneficios figure {
+        flex-basis: 40%;
+        height: 16em;
+        width: 25em;
+        flex-grow: 1;
+    }
+
+    #quienes-somos div {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    #quienes-somos figure {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 50%;
+        flex-grow: 1;
+        align-items: center;
+        max-width: 2000px;
+        flex-wrap: wrap;
+    }
+
+
+    #quienes-somos img {
+        width: 60vh;
+    }
+
+    #testimonios div {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 2000px;
+    }
+
+    #testimonios figure {
+        flex-basis: 40%;
+        flex-grow: 1;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    #home {
+        height: 70vh;
+    }
+
+    #home h2 {
+        color: white;
+        font-size: 3.5rem;
+    }
+    
+    #beneficios div {
+        flex-wrap: nowrap;
+        max-width: 2000px;
+        margin: auto;
+    }
+
+    #beneficios figure {
+        flex-basis: 40%;
+        height: 15em;
+        width: 25em;
+        flex-grow: 1;
+    }
+
+    #quienes-somos figure {
+        max-width: 2000px;
+    }
+
+    #quienes-somos figcaption {
+        align-items: center;
+        gap: 44px;
+        padding: 0;
+    }
+
+    #quienes-somos img {
+        align-items: center;
+        gap: 44px;
+        padding: 0;
+    }
+
+    #testimonios div {
+        max-width: 2000px;
+        flex-wrap: nowrap;
+        margin: auto;
+    }
+
+    #testimonios figure {
+        flex-basis: 40%;
+        align-items: center;
+    }
+
+}
+
+
+
+
+
+
